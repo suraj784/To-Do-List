@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(163, 214, 239);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.to-do-list{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin:150px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+}
+h2{
+    color:#002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    position: relative;
+}
+i{
+    font-size: small;
+    color: #8a74d4;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: none;
+    outline: 3px groove #000;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.row input{
+    flex: 1; 
+    border:none ;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.row input::placeholder{
+    color: #23019d;
+}
+
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: #41f972;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 1px;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block: 10px;
+}
