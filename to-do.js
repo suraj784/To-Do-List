@@ -14,7 +14,7 @@ function addTask(){
         let span = document.createElement('span')
         span.textContent = "\u00d7"
         task.appendChild(span)
-        span.style.right = '0px';
+        
     }
     inputBox.value = '';
     saveData()
