@@ -1,5 +1,5 @@
 let listContainer = document.getElementById('list-container')
-let head = document.querySelector('head')
+
 let inputBox = document.getElementById('input-box')
 
 function addTask(){
