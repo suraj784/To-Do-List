@@ -10,6 +10,7 @@ function addTask(){
         const task = document.createElement('li')
         task.textContent = inputBox.value;
         listContainer.appendChild(task)
+
         // inputBox.value = ''
         let span = document.createElement('span')
         span.textContent = "\u00d7"
@@ -19,11 +20,12 @@ function addTask(){
     inputBox.value = '';
     saveData()
 }
-listContainer.addEventListener('click', (e)=>{
+listContainer.addEventListener('click', (input)=>{
     
-     if(e.target.tagName === 'SPAN'){
-        e.target.parentElement.remove()
+     if(input.target.tagName === 'SPAN'){
+        input.target.parentElement.remove()
         saveData()
     }
 })
+
 
