@@ -7,16 +7,18 @@ function addTask(){
         alert('Please Enter the Text')
     }
     else{
+        // add task
         const task = document.createElement('li')
         task.textContent = inputBox.value;
         listContainer.appendChild(task)
 
-        // inputBox.value = ''
+        // span used for removed content
         let span = document.createElement('span')
         span.textContent = "\u00d7"
         task.appendChild(span)
         
-    }
+    } 
+    // clear input field after adding task
     inputBox.value = '';
     saveData()
 }
